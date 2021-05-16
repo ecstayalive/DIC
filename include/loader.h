@@ -7,10 +7,10 @@
 #ifndef DIC_LOADER_H_
 #define DIC_LOADER_H_
 
+#include "types.h"
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <string>
-#include "types.h"
 
 /**
  * @brief 加载高速摄像机拍摄的图片

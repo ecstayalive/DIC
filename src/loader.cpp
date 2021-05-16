@@ -1,6 +1,6 @@
-#include <dirent.h>
 #include "loader.h"
 #include "types.h"
+#include <dirent.h>
 
 
 using namespace std;
@@ -8,7 +8,7 @@ using namespace cv;
 
 Loader::Loader() : PATH("../dataset/") {}
 
-Loader::~Loader() {}
+Loader::~Loader() = default;
 
 DataSet Loader::run() {
     DataSet dataset;
@@ -22,6 +22,11 @@ DataSet Loader::run() {
         }
     }
     // 读取完成
+//    // 显示图像
+//    for (int i = 0; i < dataset.sum_number; i++) {
+//        imshow("img", dataset.image[i]);
+//        waitKey(100);
+//    }
     return dataset;
 }
 

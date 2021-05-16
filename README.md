@@ -1,19 +1,56 @@
 # DIC
-## 项目介绍
-数字图像相关法(digital image correlation DIC)，又称数字散斑相关法，
-是将du试件变形前后的两幅数zhi字图像，通过相dao关计算获取感兴趣区域的变
-形信息。由于该方法对实验环境要求极为宽松，并且具有全场测量、抗干扰能力强、
-测量精度高等优点。
 
-## 目录结构
+[中文](README-ZH.md)
+
+## Project Introduction
+Digital image correlation method, also known as digital speckle correlation method,
+It is the two digital images before and after the specimen is deformed,
+and the deformation information of the region of interest is obtained through related calculations.
+Because this method has extremely loose requirements for the experimental environment,
+and has the advantages of full-field measurement, strong anti-interference ability,
+and high measurement accuracy.
+
+## Directory Structure
+```
+.
+├── CMakeLists.txt
+├── dataset                 # Store images of the datasets
+├── include
+│   ├── base.h
+│   ├── loader.h
+│   ├── process.h
+│   └── types.h
+├── LICENSE
+├── main.cpp
+├── README.md
+├── README-ZH.md
+├── result                  # Store program run results
+└── src
+    ├── loader.cpp
+    └── process.cpp
 ```
 
-```
+## Project Progress
 
-## 开发环境
+### Stage 1
+
+**Original Image**  
+
+![original_image](./result/original.png)
+
+**Corner Detection** 
+
+![thred_image](./result/thredimage.png)
+
+**Contour Detection** 
+
+![rgb_image](./result/rgb_rect.png)
+
+**Process Result** 
+
+![result](./result/result.png)
+
+## Development Environment
 - Ubuntu >= 18.04
 - OpenCv >= 4.0
 - cmake >= 3.16
-
-## 说明
-该项目只允许学习交流使用。
